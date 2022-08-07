@@ -11,12 +11,13 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+ 
 }
 
 body {
   --twitter-color: #50b7f5;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   height: 100vh;
   max-width: 1300px;
   margin-left: auto;
@@ -168,3 +169,116 @@ transition: 0.2s;
     margin-top: 20px;
     margin-left: auto;
   }
+
+  /* post */
+
+  .post__avatar img {
+    border-radius: 50%;
+    height: 40px;
+  }
+
+  .post {
+    display:flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--twitter-color);
+    padding-bottom: 10px;
+  }
+
+  .post__body img {
+    width: 450px;
+    object-fit: contain;
+    border-radius: 20px;
+    margin-right: 200px;
+
+  }
+  
+  .post__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-right: 150px;
+  }
+
+  .post__badge {
+    font-size: 14px;
+    color:var(--twitter-color);
+    margin-right: 5px;
+  }
+
+  .post_headerSpecial {
+    font-weight: 600;
+    font-size: 12px;
+    color: gray;
+  }
+
+  .post__headerText h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .post__headerDescription {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .post__body {
+    flex: 1;
+    padding: 10px
+  }
+  .post__avatar {
+
+    padding: 20px;
+  }
+/*widgets */
+  .widgets {
+    flex:0.3
+
+  }
+
+  .widgets__input {
+    display: flex;
+    align-items: center;
+    background-color: rgb(219,219,219);
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+
+.widgets__input input {
+  border: none;
+  background-color: rgb(219, 219, 219);
+  outline:none;
+}
+.widgets_searchIcon {
+  color: gray;
+}
+
+.widgets__widgetContainer {
+  margin-top: 15px;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 20px;
+}
+.widgets__widgetContainer h2 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.ikinci_tweet,.birinci_tweet  {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+}
+
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+i:hover {
+  cursor: pointer;
+  color:rgb(161, 215, 247);
+}
